@@ -46,7 +46,6 @@
   border: 0.5px solid rgba(180, 179, 179, 0.459);
   cursor: pointer;
   font-size: 1.2rem;
-
 }
 
 .btn-calculator:hover {
@@ -55,7 +54,8 @@
 
 .color-right {
   background-color: rgb(236, 173, 91);
-  font-size: 1.5rem;}
+  font-size: 1.5rem;
+}
 
 .color-right:hover {
   background-color: rgba(235, 133, 97, 0.813);
