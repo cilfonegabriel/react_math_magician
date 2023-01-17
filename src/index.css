@@ -17,7 +17,7 @@
 }
 
 .container-calculator {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -55,7 +55,7 @@
 
 .color-right {
   background-color: rgb(236, 173, 91);
-  font-size: 2rem;}
+  font-size: 1.5rem;}
 
 .color-right:hover {
   background-color: rgba(235, 133, 97, 0.813);
