@@ -4,7 +4,11 @@ import calculate from '../logic/calculate';
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -13,9 +17,14 @@ class Calculator extends React.Component {
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <section className="container-calculator">
-        <h3 className="result">0</h3>
+        <div className="result">
+          {total}
+          {operation}
+          {next}
+        </div>
         <div className="buttons-calculator">
           <button onClick={this.handleClick} type="button" className="btn-calculator">AC</button>
           <button onClick={this.handleClick} type="button" className="btn-calculator">+/-</button>
@@ -23,7 +32,7 @@ class Calculator extends React.Component {
           <button onClick={this.handleClick} type="button" className="btn-calculator color-right">÷</button>
           <button onClick={this.handleClick} type="button" className="btn-calculator">7</button>
           <button onClick={this.handleClick} type="button" className="btn-calculator">8</button>
-          <button  onClick={this.handleClick} type="button" className="btn-calculator">9</button>
+          <button onClick={this.handleClick} type="button" className="btn-calculator">9</button>
           <button onClick={this.handleClick} type="button" className="btn-calculator color-right">x</button>
           <button onClick={this.handleClick} type="button" className="btn-calculator">4</button>
           <button onClick={this.handleClick} type="button" className="btn-calculator">5</button>
