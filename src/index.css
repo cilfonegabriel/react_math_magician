@@ -6,21 +6,20 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  width: 100%;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container-calculator {
-  width: 80%;
+.containerCalculator {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  margin: 62px 0 0 0;
 }
 
 .result {
@@ -33,6 +32,7 @@
   background-color: #858694;
   color: white;
   padding-right: 5px;
+  margin: 0 0 0 0;
 }
 
 .buttons-calculator {
@@ -69,4 +69,61 @@
   .container-calculator {
     width: 25%;
   }
+}
+
+/* navbar page */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px;
+}
+
+.subtitle {
+  font-size: xx-large;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 17px 0 0 0;
+}
+
+/* Home page */
+
+.home-title {
+  font-size: x-large;
+  margin: 15px 0 0 0;
+  padding: 18px;
+}
+
+.textSection {
+  margin: 10px 0 35px 0;
+  padding: 0 50px 0 37px;
+}
+
+/* calculator page */
+
+.pMath {
+  text-align: justify;
+  font-size: x-large;
+  padding: 0 0 0 63px;
+}
+
+.calculatorDiv {
+  margin: 0 126px 0 0;
+}
+
+/* Quotes page */
+
+.sentence {
+  font-size: unset;
+  text-align: center;
+  padding: 10px 0 0 23px;
+  line-height: 39px;
+  margin: 81px 0 31px 0;
+}
+
+.author {
+  text-align: center;
 }
