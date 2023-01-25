@@ -19,4 +19,10 @@ describe('Test operate function:', () => {
   test('Any other operator should throw an error', () => {
     expect(() => operate('5', '2', '&')).toThrow();
   });
+  test('return a message if try to divide by zero', () => {
+    expect(operate('12', '0', '÷')).toEqual('Can\'t divide by 0.');
+  });
+  test('return error message module container zero', () => {
+    expect(operate('12', '0', '%')).toEqual("Can't find modulo as can't divide by 0.");
+  });
 });
